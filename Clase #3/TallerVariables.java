@@ -13,10 +13,21 @@ public class  TallerVariables {
         double Volumen = 0;
         double densidad = 0;
         double ocupacion = 0; 
+        double CO2total = 0;
+        double CO2porkm = 0;
+        double vmedia = 0;
+        double vpondt = 0;
+        double sigma = 0;
+        double cvprom = 0;
+        double costomant = 0;
+        double kmV = 0;
+        double kmlmodelo = 0;
+        double v = 0;
         double v1 = 0; 
         double v2 = 0;
         double v3 = 0;
         double vprom = 0;
+        double vnorm = 0;
         double d1 = 42.0;
         double d2 = 58.5;
         double d3 = 37.2;
@@ -37,6 +48,7 @@ public class  TallerVariables {
         double deprecPorKm = 0.08;
         double volCamionM3 = 10.0;
         double fCO2 = 2.68;
+        double galtol = 0; 
         double galPorLitro = 0.264172;
         int  vmin = 30;
         int vmax = 90 ;
@@ -44,7 +56,7 @@ public class  TallerVariables {
         int vb = 80;
         double ca = 0.05;
         double cb = 0.09;
-        double a = 0.0008;
+        double a = -0.0008;
         double b = 0.08;
         double c = 4.0;
        
@@ -84,6 +96,17 @@ public class  TallerVariables {
       Volumen = (largo*ancho*alto);
       densidad = (masaCargaKg/(Volumen));
       ocupacion = (Volumen/volCamionM3);
+      CO2total = (l1+l2+l3)*fCO2;
+      CO2porkm = (CO2total/(d1+d2+d3));
+      galtol = (l1+l2+l3)*galPorLitro;
+      vmedia = (v1+v2+v3)/(3);
+      vpondt = (t1*v1 + t2*v2 + t3*v3) / (t1+t2+t3);
+      sigma = (Math.sqrt(((Math.pow(v1-vmedia,2))+(Math.pow(v2-vmedia,2))+(Math.pow(v3-vmedia,2)))/3));
+      vnorm = (vprom-vmin)/(vmax-vmin);
+      cvprom = (ca + (cb-ca)*(vprom-va)/(vb-va));
+      costomant = (cvprom)*(d1 + d2 + d3);
+      kmV =  av+(b)+(c);
+      kmlmodelo = (kmV)*(vprom);
      System.out.println(vprom);
      System.out.println(klmtotal);
      System.out.println(comb);
@@ -93,6 +116,21 @@ public class  TallerVariables {
      System.out.println(costoporkm);
      System.out.println(Volumen);
      System.out.println(densidad);
+     System.out.println(ocupacion);
+     System.out.println(CO2total);
+     System.out.println(CO2porkm);
+     System.out.println(galtol);
+     System.out.println(vmedia);
+     System.out.println(vpondt);
+     System.out.println(sigma);
+     System.out.println(vnorm);
+     System.out.println(cvprom);
+     System.out.println(costomant);
+     System.out.println(kmV);
+      System.out.println(kmlmodelo);
+     
+
+
 
 
 
