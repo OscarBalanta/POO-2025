@@ -1,4 +1,4 @@
-public class  TallerVariables {
+public class  TallerVariables_A {
     public static void main(String[]args){
 
         double kml1 = 0;
