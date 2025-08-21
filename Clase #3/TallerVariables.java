@@ -59,6 +59,11 @@ public class  TallerVariables {
         double a = -0.0008;
         double b = 0.08;
         double c = 4.0;
+        double w1 = 0.25;
+        double w2 = 0.25;
+        double w3 = 0.25;
+        double w4 = 0.25;
+        double score = 0;
        
 
         v1 = (d1/t1);
@@ -105,8 +110,9 @@ public class  TallerVariables {
       vnorm = (vprom-vmin)/(vmax-vmin);
       cvprom = (ca + (cb-ca)*(vprom-va)/(vb-va));
       costomant = (cvprom)*(d1 + d2 + d3);
-      kmV =  av+(b)+(c);
-      kmlmodelo = (kmV)*(vprom);
+      kmV =  c;
+      kmlmodelo = kmV+(vprom);
+      score = w1 * (1)/(costoporkm)+w2 * klmtotal + w3 * (1)/(CO2porkm)+w4 * (1)/(1+sigma);
      System.out.println(vprom);
      System.out.println(klmtotal);
      System.out.println(comb);
@@ -127,7 +133,8 @@ public class  TallerVariables {
      System.out.println(cvprom);
      System.out.println(costomant);
      System.out.println(kmV);
-      System.out.println(kmlmodelo);
+     System.out.println(kmlmodelo);
+     System.out.println(score);
      
 
 
