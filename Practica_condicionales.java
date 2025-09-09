@@ -115,10 +115,99 @@ public class Practica_condicionales {
             System.out.println(NUMBER+" no es un número par");
         }
 
-       
-       
 
-    } 
+          Scanner scanner = new Scanner(System.in);
+
+     
+        System.out.print("Introduce el día: ");
+        int Dia = scanner.nextInt();
+        System.out.print("Introduce el mes: ");
+        int Mes = scanner.nextInt();
+        System.out.print("Introduce el año: ");
+        int Anio = scanner.nextInt();
+
+        int diaSiguiente = Dia;
+        int mesSiguiente = Mes;
+        int anioSiguiente = Anio;
+
+        
+        boolean bisiesto = false;
+        if ((Anio % 4 == 0 && Anio % 100 != 0) || (Anio % 400 == 0)) {
+            bisiesto = true;
+        }
+
+        int diasDelMes = 31;
+
+        if (Mes == 4 || Mes == 6 || Mes == 9 || Mes == 11) {
+            diasDelMes = 30;
+        } else if (Mes == 2) {
+            if (bisiesto) {
+                diasDelMes = 29;
+            } else {
+                diasDelMes = 28;
+            }
+        }
+
+       
+        if (Dia < diasDelMes) {
+            diaSiguiente = Dia + 1;
+        } else {
+            diaSiguiente = 1;
+            if (Mes < 12) {
+                mesSiguiente = Mes + 1;
+            } else {
+                mesSiguiente = 1;
+                anioSiguiente = Anio + 1;
+            }
+        }
+
+        
+        System.out.println("La fecha del día siguiente es: " + diaSiguiente + "/" + mesSiguiente + "/" + anioSiguiente);
+
+        
+
+        
+          Scanner Teclado = new Scanner(System.in);
+
+         System.out.print("Introduce tu Peso: ");
+         int Peso1 = Teclado.nextInt(); 
+
+         int NumPeso = 0 ;
+         int Peso2 = 50;
+         int Peso3 = 60;
+
+
+         if (NumPeso > Peso1){
+            System.out.println(NumPeso+ "Gordo");
+        }else{
+            if (NumPeso > Peso1 && NumPeso < Peso2){
+                System.out.println("Gordo");
+            }
+        }
+        
+         System.out.print("Introduce el primer número: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Introduce el segundo número: ");
+        int num2 = scanner.nextInt();
+
+        
+        if (num1 != 0 && num2 % num1 == 0) {
+            System.out.println(num1 + " es divisor de " + num2);
+        } else if (num2 != 0 && num1 % num2 == 0) {
+            System.out.println(num2 + " es divisor de " + num1);
+        } else {
+            System.out.println("Ninguno es divisor del otro.");
+        }
+    
+
+    }
+
+       
+      
+
+        
+    
 
         
        
