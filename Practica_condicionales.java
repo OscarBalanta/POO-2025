@@ -62,6 +62,8 @@ public class Practica_condicionales {
             System.out.println("El número es cero");
         }
 
+        //-----D
+
         int Num = 0;
         double x = 3;
         double y = 1;
@@ -71,13 +73,16 @@ public class Practica_condicionales {
           System.out.println(p);
         }
 
-
+        //------Distancia
 
         double distancia = 23;
         double tiempo = 0;
         if(distancia > 20 && distancia < 35){
             System.out.println(tiempo);
         }
+
+
+        //------Numeros mayor o menor
 
         int NUM1 = 10;
         int NUM2 = 122;
@@ -89,6 +94,9 @@ public class Practica_condicionales {
             System.out.println("Ambos numeros tienen el mismo valor");
         }
 
+
+        //----Numeros cetral
+
         int Nmenor = 100;
         int Ncentral = 150;
         int Nmayor = 200;
@@ -97,11 +105,11 @@ public class Practica_condicionales {
               System.out.println("El numero central es " +Ncentral);
         }
 
-       
+       //-----Raiz de un Numero
        double NRAIZ = 25;
         System.out.println(Math.sqrt(NRAIZ));
        
-        
+       //----Numeros pares o impares 
           Scanner teclado = new Scanner(System.in);
        
         int NUMBER;
@@ -115,7 +123,7 @@ public class Practica_condicionales {
             System.out.println(NUMBER+" no es un número par");
         }
 
-
+        //---fECHAS
           Scanner scanner = new Scanner(System.in);
 
      
@@ -165,7 +173,7 @@ public class Practica_condicionales {
         System.out.println("La fecha del día siguiente es: " + diaSiguiente + "/" + mesSiguiente + "/" + anioSiguiente);
 
         
-
+        //-----Peso academico
         
           Scanner Teclado = new Scanner(System.in);
 
