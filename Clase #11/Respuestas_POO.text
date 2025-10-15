@@ -1,0 +1,61 @@
+RESPUESTAS PDF:
+
+Responda brevemente:
+1. ¿Qué es la encapsulación y por qué es importante en la Programación Orientada a Objetos?
+
+𝙍𝙚𝙨𝙥𝙪𝙚𝙨𝙩𝙖: La encapsulación protege los datos internos de una clase y controla su acceso mediante métodos
+públicos
+
+2. ¿Qué diferencia hay entre un método y un constructor?
+
+𝙍𝙚𝙨𝙥𝙪𝙚𝙨𝙩𝙖: Un método es una función que realiza una acción u operación específica dentro de la clase,
+ y puede ser invocado múltiples veces en un objeto. Un constructor es un tipo 
+ especial de método que se invoca automáticamente solo una vez al 
+ crear una nueva instancia (objeto) de una clase
+
+3. ¿Por qué los atributos deben ser privados y no públicos?
+
+𝙍𝙚𝙨𝙥𝙪𝙚𝙨𝙩𝙖:Los atributos deben ser privados para garantizar integridad y control.
+Si fueran públicos, cualquier parte del programa podría acceder a ellos y modificarlos directamente, 
+saltándose la lógica de validación o las reglas de negocio
+
+4. ¿Qué función cumplen los getters y setters?
+
+𝙍𝙚𝙨𝙥𝙪𝙚𝙨𝙩𝙖:Los getters y setters permiten leer o modificar valores con validación.
+
+5. Verdadero o falso: “Un método setter no debe validar los datos que recibe.” Justifique.
+
+𝙍𝙚𝙨𝙥𝙪𝙚𝙨𝙩𝙖:Un método setter debe validar los datos que recibe. La validación es una de las 
+funciones principales de un setter, ya que garantiza que los datos asignados al atributo
+ cumplan con las reglas de negocio o restricciones
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+Nombre            | Tipo de dato     |       Visibilidad       |  Descripción        |
+---------------------------------------------------------------------------------------------
+| titular         |   String         |        Privado          | Nombre del titular o dueño de la cuenta              |
+---------------------------------------------------------------------------------------------
+| número de cuenta|   String         |        Privado          | Numero serial de identificación de la cuenta                    |
+---------------------------------------------------------------------------------------------
+| saldo           |   Double         |        Privado          | Dinero disponible en la cuenta                    |
+---------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------
+ Nombre                  | Parametros       |      Retorno            |  Descripción        |
+---------------------------------------------------------------------------------------------
+| Depositar              |                  | Double Monto            |                     |
+---------------------------------------------------------------------------------------------
+| Retirar                |                  |                         |                     |
+---------------------------------------------------------------------------------------------
+| toString               |                  |                         |                     |
+---------------------------------------------------------------------------------------------
