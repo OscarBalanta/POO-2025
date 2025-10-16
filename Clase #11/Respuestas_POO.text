@@ -53,9 +53,9 @@ Nombre            | Tipo de dato     |       Visibilidad       |  Descripción  
 ---------------------------------------------------------------------------------------------
  Nombre                  | Parametros       |      Retorno            |  Descripción        |
 ---------------------------------------------------------------------------------------------
-| Depositar              |                  | Double Monto            |                     |
+| Depositar              | Double           | Double Monto            | Aumenta el saldo sisponible en la cuenta                    |
 ---------------------------------------------------------------------------------------------
-| Retirar                |                  |                         |                     |
+| Retirar                | Double           | Double Monto            | Disminuye el saldo de la cuenta                    |
 ---------------------------------------------------------------------------------------------
-| toString               |                  |                         |                     |
+| toString               | String           | String                  | Aroja la información basica de la cuenta                     |
 ---------------------------------------------------------------------------------------------
