@@ -1,3 +1,5 @@
+
+
 public class Boton {
     private String nombre;
     private boolean iluminado;
@@ -20,13 +22,13 @@ public class Boton {
         this.iluminado = iluminado;
     }
 
-    // Métodos base
+    
     public void presionar(ControlElevador control) {
         control.iluminarBoton(this);
     }
 }
 
-// Herencia: Botón dentro del elevador
+
 class BotonElevador extends Boton {
     private int pisoDestino;
 
@@ -47,7 +49,7 @@ class BotonElevador extends Boton {
     }
 }
 
-// Herencia: Botón de llamada externa
+
 class BotonPiso extends Boton {
     private int pisoOrigen;
 

@@ -8,7 +8,7 @@ public class ControlElevador {
         puertas = new Puertas();
     }
 
-    // Métodos del control
+ 
     public void moverElevador(int piso) {
         puertas.cerrarPuerta();
         elevador.moverA(piso);
@@ -37,7 +37,7 @@ public class ControlElevador {
         System.out.println("Iluminación cancelada en " + boton.getNombre());
     }
 
-    // Clases internas simples para mantener solo 3 archivos
+    
     class Elevador {
         private int pisoActual;
         private boolean enMovimiento;
